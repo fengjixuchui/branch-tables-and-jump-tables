@@ -90,7 +90,7 @@ A branch table represents an array of relative or absolute addresses used for ju
 
 4. `al` is now used as an index to the jump table at `56cd3f`.  (`&00575F06[0 ] .. &00575F06[25]` have been added for ease of reading)
 	1. We scale `eax * 4` to account for the sizes of an address in x86, which is 4 bytes. After scaling `eax = 40h`.
-	2. The base value at the address of `jpt_56CD3F[0]` gives us `00575F06`, and `00575f06 + 40h = 575F46`. We can either get the value we will jump to using this address and dynamic analysis in WinDBG or continue using static analysis in IDA with our original offset of  `10h`, the entry `&00575F06[16] .text:00575F06 dd offset loc_572E27`. So the address we jump to is `572E27`.
+	2. The value at the base address `jpt_56CD3F[0]` gives us `00575F06`, and `00575f06 + 40h = 575F46`. We can either get the value we will jump to using this address and dynamic analysis in WinDBG or continue using static analysis in IDA with our original offset of  `10h`, the entry `&00575F06[16] .text:00575F06 dd offset loc_572E27`. So the address we jump to is `572E27`.
 ```c
 &00575F06[0 ] .text:00575F06 jpt_56CD3F      dd offset loc_56FAD9    ; DATA XREF: _FXCLI_OraBR_Exec_Command+889↑r
 &00575F06[1 ] .text:00575F06                 dd offset loc_56FC21    ; jump table for switch statement
