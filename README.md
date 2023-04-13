@@ -1,5 +1,5 @@
 # Branch Tables and Jump Tables
-> This repo covers Branch and Jump Tables in C and x86 assembly. Branch Tables handle jumps within a subroutine, while Jump Tables facilitate dynamic subroutine calls. Examples and step-by-step explanations are provided for a deeper understanding.
+> This repo covers Branch and Jump Tables in C and x86 assembly. Branch Tables handle **jumps within a subroutine**, while Jump Tables facilitate dynamic subroutine calls. Examples and step-by-step explanations are provided for a deeper understanding.
 
 - snowcra5h@icloud.com
 - https://twitter.com/snowcra5h
@@ -130,7 +130,7 @@ A branch table represents an array of relative or absolute addresses used for ju
 ```
 
 ## Jump Table
-A jump table is an array of pointers or addresses used to jump to **different subroutines** or functions in a program. It allows the program to dynamically call various subroutines based on an index typically calculated at runtime.
+A jump table is an array of pointers or addresses used to jump to **different subroutines** in a program. It allows the program to dynamically call various subroutines based on an index typically calculated at runtime.
 
 **Example in c**
 ```c
