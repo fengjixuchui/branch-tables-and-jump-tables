@@ -1,5 +1,5 @@
 # Branch Tables and Jump Tables
-> This repo covers Branch and Jump Tables in C and x86 assembly. Branch Tables handle **jumps within a subroutine**, while Jump Tables facilitate dynamic subroutine calls. Examples and step-by-step explanations are provided for a deeper understanding.
+> This repo covers Branch and Jump Tables in C and x86 assembly. Branch Tables handle jumps within a subroutine, while Jump Tables facilitate dynamic subroutine calls. Examples and step-by-step explanations are provided for a deeper understanding.
 
 - snowcra5h@icloud.com
 - https://twitter.com/snowcra5h
